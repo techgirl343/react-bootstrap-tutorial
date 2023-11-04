@@ -5,6 +5,7 @@ import Navigationbar from './Navigationbar';
 import CarouselPage from './CarouselPage'
 import CardPage from './CardPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './HomePage';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
     <div className="App">
       <Navigationbar/>
       <Routes>
-      <Route path='/carousel' element={<CarouselPage/>}></Route>
-      <Route path='/card' element={<CardPage/>}></Route>
+        <Route path='/' element={<HomePage/>}></Route>
+        <Route path='/carousel' element={<CarouselPage/>}></Route>
+        <Route path='/card' element={<CardPage/>}></Route>
       </Routes>
     </div>
     </BrowserRouter>
